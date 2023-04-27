@@ -3,6 +3,7 @@ server:
   secret_key: "changethis" 
   limiter: true
   image_proxy: true
+  theme_args.simple_style: dark
 ui:
   static_use_hash: true
 redis:
