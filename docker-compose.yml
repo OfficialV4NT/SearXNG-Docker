@@ -8,6 +8,7 @@ services:
       - searxng
     ports:
      - "8071:8080"
+     restart: 'unless-stopped'
     volumes:
       - ./searxng:/etc/searxng:rw
     environment:
@@ -26,6 +27,7 @@ services:
   redis:
     container_name: redis
     image: "redis:alpine"
+    restart: 'always'
     command: redis-server --save "" --appendonly "no"
     networks:
       - searxng
