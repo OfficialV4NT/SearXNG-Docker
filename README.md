@@ -5,12 +5,12 @@ Create a new SearXNG  instance in five minutes using Docker
 
 ## Security Audits:
 
-- [Internet.ml](https://internet.nl/site/code.xbdm.fun/2060148/)
+- [Internet.ml](https://internet.nl/site/search.xbdm.fun/2060148/)
 - [Mozilla.org](https://observatory.mozilla.org/)
-- [ImmuniWeb](https://www.immuniweb.com/ssl/code.xbdm.fun/a8FxuGr6/)
+- [ImmuniWeb](https://www.immuniweb.com/ssl/search.xbdm.fun/a8FxuGr6/)
 - [HSTS Preload](https://hstspreload.org/)
-- [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=code.xbdm.fun)
-- [Security Headers](https://securityheaders.com/?q=code.xbdm.fun&hide=on&followRedirects=on)
+- [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=search.xbdm.fun)
+- [Security Headers](https://securityheaders.com/?q=search.xbdm.fun&hide=on&followRedirects=on)
 
 
 ## Usage:
