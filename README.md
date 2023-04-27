@@ -39,20 +39,11 @@ Official Instance
 ```http://localhost:8071```
 
 
-## How to access the logs
-To access the logs from all the containers use: `docker-compose logs -f`.
+## How to access the debugging logs
 
 To access the logs of one specific container:
 - SearXNG: `docker-compose logs -f searxng`
 - Redis: `docker-compose logs -f redis`
-
-
-
-## Note on the image proxy feature
-
-The SearXNG image proxy is activated by default.
-
-The default [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) allow the browser to access to ```${SEARXNG_HOSTNAME}``` and ```https://*.tile.openstreetmap.org;```.
 
 
 ## How to update ?
