@@ -31,7 +31,7 @@ Create a new SearXNG  instance in five minutes using Docker
 
 
 
-```http://localhost:8088```
+```http://localhost:8071```
 
 
 ## How to access the logs
