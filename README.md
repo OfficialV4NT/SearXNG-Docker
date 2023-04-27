@@ -7,6 +7,8 @@ Official Instance
 | -- | -- | -- | -- |
 | [search.xbdm.fun](https://search.xbdm.fun) | Cloudflare | Hetzner | Germany
 
+**Make a PR or issue to get added to the list.**
+
 ## Security Audits:
 
 - [Internet.ml](https://internet.nl/site/search.xbdm.fun/2060148/)
