@@ -1,7 +1,11 @@
-# searxng-docker
+# my-SearXNG-Docker-Compose
+Create a SearXNG Instance in 5 minutes using docker-compose.
 
-Create a new SearXNG  instance in five minutes using Docker
+Official Instance
 
+| Domain | CDN/DDoS Protection | Provider | Country |
+| -- | -- | -- | -- |
+| [search.xbdm.fun](https://search.xbdm.fun) | Cloudflare | Hetzner | Germany
 
 ## Security Audits:
 
@@ -28,7 +32,6 @@ Create a new SearXNG  instance in five minutes using Docker
 5. ```nano docker-compose.yml```
 
 5. ```docker-compose up -d```
-
 
 
 ```http://localhost:8071```
