@@ -23,7 +23,9 @@ Create a new SearXNG  instance in five minutes using Docker
 
 3. ```git clone https://github.com/WhateverItWorks/searxng-docker.git searxng```
 
-4. ```nano docker-compose.yml (the settings that im using should be recommended for you, but you can change it if you want)```
+4. ```nano settings.yml```
+
+5. ```nano docker-compose.yml```
 
 5. ```docker-compose up -d```
 
