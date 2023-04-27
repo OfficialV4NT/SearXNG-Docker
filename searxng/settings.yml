@@ -1,84 +1,9 @@
-use_default_settings: false
-
-general:
-  debug: false
-  instance_name:  "SearXNG | WhateverItWorksXNG"
-  privacypolicy_url: https://www.whateveritworks.org/privacy
-  donation_url: https://www.whateveritworks.org/donate
-  contact_url: mailto:support@whateveritworks.org
-  enable_metrics: true
-  
-  search:
-  safe_search: 0
-  autocomplete: ""
-  default_lang: ""
-  ban_time_on_fail: 3
-  max_ban_time_on_fail: 120
-  suspended_times:
-    SearxEngineAccessDenied: 86400
-    SearxEngineCaptcha: 86400
-    SearxEngineTooManyRequests: 3600
-    cf_SearxEngineCaptcha: 1296000
-    cf_SearxEngineAccessDenied: 86400
-    recaptcha_SearxEngineCaptcha: 604800
-  formats:
-    - html
-
-brand:
-  issue_url: https://github.com/searxng/searxng/issues
-  docs_url: https://docs.searxng.org
-  public_instances: https://searx.space
-  wiki_url: https://github.com/searxng/searxng/wiki
-
+use_default_settings: true
 server:
-  secret_key: "changethis"
-  limiter: true 
+  secret_key: "changethis" 
+  limiter: true
   image_proxy: true
-      default_http_headers:
-      X-Content-Type-Options : nosniff
-      X-XSS-Protection : 1; mode=block
-      X-Download-Options : noopen
-      X-Robots-Tag : noindex, nofollow
-      Referrer-Policy : no-referrer
 ui:
   static_use_hash: true
-  default_locale: "en_US"
-  query_in_title: false
-  infinite_scroll: false
-  center_alignment: false
-  cache_url: https://web.archive.org/web/
-  default_theme: simple
-  theme_args:
-    simple_style: dark
 redis:
   url: redis://redis:6379/0
-outgoing:
-  request_timeout: 2.0       # default timeout in seconds, can be override by engine
-  max_request_timeout: 10.0  # the maximum timeout in seconds
-  useragent_suffix: ""       # information like an email address to the administrator
-  pool_connections: 100      # Maximum number of allowable connections, or null
-                             # for no limits. The default is 100.
-  pool_maxsize: 10           # Number of allowable keep-alive connections, or null
-                             # to always allow. The default is 10.
-  enable_http2: true         # See https://www.python-httpx.org/http2/
-  # uncomment below section if you want to use a custom server certificate
-  # see https://www.python-httpx.org/advanced/#changing-the-verification-defaults
-  # and https://www.python-httpx.org/compatibility/#ssl-configuration
-  #  verify: ~/.mitmproxy/mitmproxy-ca-cert.cer
-  #
-  # uncomment below section if you want to use a proxyq see: SOCKS proxies
-  #   https://2.python-requests.org/en/latest/user/advanced/#proxies
-  # are also supported: see
-  #   https://2.python-requests.org/en/latest/user/advanced/#socks
-  #
-  #  proxies:
-  #    all://:
-  #      - http://proxy1:8080
-  #      - http://proxy2:8080
-  #
-  #  using_tor_proxy: true
-  #
-  # Extra seconds to add in order to account for the time taken by the proxy
-  #
-  #  extra_proxy_timeout: 10.0
-  #
