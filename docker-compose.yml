@@ -8,9 +8,9 @@ services:
       - searxng
     ports:
      - "8071:8080"
-     restart: 'unless-stopped'
+     restart: 'always'
     volumes:
-      - ./searxng:/etc/searxng:rw
+      - ./searxng:/searxng:rw
     environment:
       - SEARXNG_BASE_URL=changethis
     cap_drop:
