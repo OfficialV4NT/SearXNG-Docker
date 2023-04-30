@@ -39,23 +39,17 @@ Official Instance
 ```http://localhost:8071```
 
 
-## How to access the debugging logs
+### How to access the debugging logs:
 
 To access the logs of one specific container:
 - SearXNG: `docker-compose logs -f searxng`
 - Redis: `docker-compose logs -f redis`
 
 
-## How to update ?
-
-To update the SearXNG stack:
+### To update the SearXNG stack:
 
 ```sh
-docker-compose pull
 docker-compose down
+docker-compose pull
 docker-compose up -d
 ```
-
-To update this `nano docker-compose.yml` file:
-
-Check out the newest version on github: [searxng/searxng-docker](https://github.com/searxng/searxng-docker).
