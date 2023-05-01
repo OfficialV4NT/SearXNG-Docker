@@ -20,7 +20,7 @@ services:
       - SETGID
       - SETUID
       healthcheck:
-      test: ["CMD", "wget" ,"--no-verbose", "--tries=1", "--spider", "http://localhost:8080/info/en/about"]
+      test: ["CMD", "wget" ,"--no-verbose", "--tries=1", "--spider", "http://127.0.0.1:8071:8080/info/en/about"]
       interval: 2m
       timeout: 5s
     logging:
