@@ -1,22 +1,14 @@
 # my-SearXNG-Docker-Compose
 Create a SearXNG Instance in 5 minutes using docker-compose.
 
-Official Instance
-
-| Domain | CDN/DDoS Protection | Provider | Country |
-| -- | -- | -- | -- |
-| [search.xbdm.fun](https://search.xbdm.fun) | Cloudflare | Hetzner | Germany
-
-**Make a PR or issue to get added to the list.**
-
 ## Security Audits:
 
-- [Internet.ml](https://internet.nl/site/search.xbdm.fun/2060148/)
+- [Internet.ml](https://internet.nl/site/search.whateveritworks.org/2060148/)
 - [Mozilla.org](https://observatory.mozilla.org/)
-- [ImmuniWeb](https://www.immuniweb.com/ssl/search.xbdm.fun/a8FxuGr6/)
+- [ImmuniWeb](https://www.immuniweb.com/ssl/search.whateveritworks.org/a8FxuGr6/)
 - [HSTS Preload](https://hstspreload.org/)
-- [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=search.xbdm.fun)
-- [Security Headers](https://securityheaders.com/?q=search.xbdm.fun&hide=on&followRedirects=on)
+- [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=search.whateveritworks.org)
+- [Security Headers](https://securityheaders.com/?q=search.whateveritworks.org&hide=on&followRedirects=on)
 
 
 ## Usage:
