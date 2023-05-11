@@ -1,3 +1,5 @@
+### search.xbdm.fun is now redirecting to search.whateveritworks.org
+
 # my-SearXNG-Docker-Compose
 Create a SearXNG Instance in 5 minutes using docker-compose.
 
