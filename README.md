@@ -7,7 +7,8 @@ Create a SearXNG Instance in 5 minutes using docker-compose.
 - [HSTS Preload](https://hstspreload.org/)
 - [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=search.whateveritworks.org)
 - [Security Headers](https://securityheaders.com/?q=search.whateveritworks.org&hide=on&followRedirects=on)
-
+- [pagespeed](https://pagespeed.web.dev/)
+- [webbkoll](https://webbkoll.dataskydd.net/en)
 
 ## Usage:
 
