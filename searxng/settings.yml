@@ -4,12 +4,15 @@ server:
   secret_key: "changethis"
   limiter: true
   image_proxy: true
+  http_protocol_version: "1.1"
 ui:
   static_use_hash: true
   default_theme: simple
   theme_args:
     simple_style: dark
   infinite_scroll: true
+  results_on_new_tab: true
+  cache_url: https://archive.ph/
 search:
   autocomplete: "google"
 general:
@@ -17,5 +20,30 @@ general:
   privacypolicy_url: https://
   donation_url: https://
   contact_url: mailto:
+plugins:
+- only_show_green_results
+- outgoing.using_tor_proxy
+#brand:
+  #issue_url: https://github.com/searxng/searxng/issues
+  #docs_url: https://docs.searxng.org
+  #public_instances: https://searx.space
+  #wiki_url: https://github.com/searxng/searxng/wiki
+enabled_plugins:
+- 'Tor check plugin'
+- 'Open Access DOI rewrite'
+- 'Hostname replace'
+- 'Self Information'
+- 'Tracker URL remover'
+- 'Hash plugin'
+- 'Search on category select'
+- 'Ahmia blacklist'
+hostname_replace:
+   '(.*\.)?youtube\.com$': 'yt.whateveritworks.org'
+   '(.*\.)?youtu\.be$': 'yt.whateveritworks.org'
+   '(.*\.)?youtube-noocookie\.com$': 'yt.whateveritworks.org'
+   '(.*\.)?reddit\.com$': 'discuss-old.whateveritworks.org'
+   '(.*\.)?redd\.it$': 'discuss-old.whateveritworks.org'
+   '(www\.)?twitter\.com$': 'tweet.whateveritworks.org'
+   'spam\.example\.com': false
 redis:
   url: redis://redis:6379/0
