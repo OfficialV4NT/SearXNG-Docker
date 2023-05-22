@@ -4,8 +4,6 @@ Create a SearXNG Instance in 5 minutes using docker-compose.
 ## Security Audits:
 
 - [Internet.ml](https://internet.nl/site/search.whateveritworks.org/2060148/)
-- [Mozilla.org](https://observatory.mozilla.org/)
-- [ImmuniWeb](https://www.immuniweb.com/ssl/search.whateveritworks.org/a8FxuGr6/)
 - [HSTS Preload](https://hstspreload.org/)
 - [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=search.whateveritworks.org)
 - [Security Headers](https://securityheaders.com/?q=search.whateveritworks.org&hide=on&followRedirects=on)
