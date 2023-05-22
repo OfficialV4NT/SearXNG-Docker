@@ -8,18 +8,20 @@ services:
       - searxng
     ports:
      - "127.0.0.1:8071:8080"
-     restart: 'always'
+    restart: 'always'
     volumes:
-      - ./searxng:/searxng:rw
-    environment:
-      - SEARXNG_BASE_URL=changethis
+      - ./searxng:/etc/searxng:rw
+    security_opt:
+      - no-new-privileges:true
     cap_drop:
       - ALL
     cap_add:
       - CHOWN
       - SETGID
       - SETUID
-      healthcheck:
+    environment:
+    - SEARXNG_BASE_URL=https://search.whateveritworks.org
+    healthcheck:
       test: ["CMD", "wget" ,"--no-verbose", "--tries=1", "--spider", "http://localhost:8080/info/en/about"]
       interval: 2m
       timeout: 5s
@@ -27,14 +29,19 @@ services:
       driver: "json-file"
       options:
         max-size: "1m"
-        max-file: "1"     
+        max-file: "1"
+
   redis:
     container_name: redis
     image: "redis:alpine"
-    restart: 'always'
+    user: 65534:65534
+    restart: always
     command: redis-server --save "" --appendonly "no"
     networks:
       - searxng
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
     tmpfs:
       - /var/lib/redis
     cap_drop:
@@ -43,7 +50,7 @@ services:
       - SETGID
       - SETUID
       - DAC_OVERRIDE
-      healthcheck:
+    healthcheck:
       test: [ "CMD", "redis-cli", "--raw", "incr", "ping" ]
       interval: 1m
       timeout: 5s
