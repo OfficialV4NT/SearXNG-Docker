@@ -20,9 +20,6 @@ general:
   privacypolicy_url: https://
   donation_url: https://
   contact_url: mailto:
-plugins:
-- only_show_green_results
-- outgoing.using_tor_proxy
 #brand:
   #issue_url: https://github.com/searxng/searxng/issues
   #docs_url: https://docs.searxng.org
@@ -36,7 +33,6 @@ enabled_plugins:
 - 'Tracker URL remover'
 - 'Hash plugin'
 - 'Search on category select'
-- 'Ahmia blacklist'
 hostname_replace:
    '(.*\.)?youtube\.com$': 'yt.whateveritworks.org'
    '(.*\.)?youtu\.be$': 'yt.whateveritworks.org'
