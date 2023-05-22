@@ -14,8 +14,6 @@ Create a SearXNG Instance in 5 minutes using docker-compose.
 
 1. Buy [Hetzner.com](https://hetzner.com) it's 100% renewal hardware and you get affordable dedicated servers, and you also help save the world.
 
-2. Get [Cloudflare](https://cloudflare.com) it's carbon renewal and you help save the world.
-
 2. ```apt install git```
 
 3. ```git clone https://github.com/WhateverItWorks/searxng-docker.git searxng```
@@ -24,7 +22,7 @@ Create a SearXNG Instance in 5 minutes using docker-compose.
 
 5. ```nano docker-compose.yml```
 
-5. ```docker-compose up -d```
+6. ```docker-compose up -d```
 
 
 ```http://localhost:8071```
