@@ -34,7 +34,7 @@ services:
   redis:
     container_name: redis
     image: "redis:alpine"
-    user: 65534:65534
+    user: nobody
     restart: always
     command: redis-server --save "" --appendonly "no"
     networks:
