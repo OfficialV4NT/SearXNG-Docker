@@ -10,6 +10,7 @@ Create a SearXNG Instance in 5 minutes using docker-compose.
 - [pagespeed](https://pagespeed.web.dev/)
 - [webbkoll](https://webbkoll.dataskydd.net/en)
 - [ImmuniWeb](https://www.immuniweb.com/ssl/search.whateveritworks.org/uLlrAeMb/)
+- [Hardenize](https://www.hardenize.com/report/search.whateveritworks.org/1686343966)
 
 ## Usage:
 
