@@ -1,13 +1,14 @@
-version: '3.7'
+version: '3.9'
 
 services:
   searxng:
     container_name: searxng
+    hostname: searxng
     image: searxng/searxng:latest
     networks:
       - searxng
     ports:
-     - "127.0.0.1:8071:8080"
+     - "127.0.0.1:8071:8080" # change port to whatever you want
     restart: 'always'
     volumes:
       - ./searxng:/etc/searxng:rw
@@ -20,11 +21,7 @@ services:
       - SETGID
       - SETUID
     environment:
-    - SEARXNG_BASE_URL=https://search.whateveritworks.org
-    healthcheck:
-      test: ["CMD", "wget" ,"--no-verbose", "--tries=1", "--spider", "http://localhost:8080/info/en/about"]
-      interval: 2m
-      timeout: 5s
+    - SEARXNG_BASE_URL=https://changethis
     logging:
       driver: "json-file"
       options:
@@ -33,7 +30,8 @@ services:
 
   redis:
     container_name: redis
-    image: "redis:alpine"
+    hostname: redis
+    image: redis:latest
     user: nobody
     restart: always
     command: redis-server --save "" --appendonly "no"
