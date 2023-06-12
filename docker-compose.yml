@@ -48,10 +48,6 @@ services:
       - SETGID
       - SETUID
       - DAC_OVERRIDE
-    healthcheck:
-      test: [ "CMD", "redis-cli", "--raw", "incr", "ping" ]
-      interval: 1m
-      timeout: 5s
 networks:
   searxng:
     ipam:
