@@ -37,8 +37,8 @@ hostname_replace:
    '(.*\.)?youtube\.com$': 'yt.whateveritworks.org'
    '(.*\.)?youtu\.be$': 'yt.whateveritworks.org'
    '(.*\.)?youtube-noocookie\.com$': 'yt.whateveritworks.org'
-   '(.*\.)?reddit\.com$': 'discuss-old.whateveritworks.org'
-   '(.*\.)?redd\.it$': 'discuss-old.whateveritworks.org'
+   '(.*\.)?reddit\.com$': 'discuss-whateveritworks.org'
+   '(.*\.)?redd\.it$': 'discuss-whateveritworks.org'
    '(www\.)?twitter\.com$': 'tweet.whateveritworks.org'
    'spam\.example\.com': false
 redis:
