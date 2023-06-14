@@ -48,6 +48,10 @@ services:
       - SETGID
       - SETUID
       - DAC_OVERRIDE
+  watchtower:
+    image: containrrr/watchtower:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
 networks:
   searxng:
     ipam:
