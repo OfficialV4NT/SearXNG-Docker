@@ -20,11 +20,11 @@ general:
   privacypolicy_url: https://
   donation_url: https://
   contact_url: mailto:
-#brand:
-  #issue_url: https://github.com/searxng/searxng/issues
-  #docs_url: https://docs.searxng.org
-  #public_instances: https://searx.space
-  #wiki_url: https://github.com/searxng/searxng/wiki
+brand:
+  issue_url: https://github.com/WhateverItWorks/my-SearXNG-Docker-Compose/issues
+  docs_url: https://wiki.whateveritworks.org
+  public_instances: https://searx.space
+  wiki_url: https://wiki.whateveritworks.org
 enabled_plugins:
 - 'Tor check plugin'
 - 'Open Access DOI rewrite'
