@@ -9,7 +9,7 @@ services:
     networks:
       - searxng
     ports:
-     - "127.0.0.1:8071:8080"
+     - "127.0.0.1:8071:8080" # change port to whatever you want
     restart: 'always'
     volumes:
       - ./searxng:/etc/searxng:rw
@@ -22,7 +22,7 @@ services:
       - SETGID
       - SETUID
     environment:
-    - SEARXNG_BASE_URL=https://search.whateveritworks.org
+    - SEARXNG_BASE_URL=changethis
     logging:
       driver: "json-file"
       options:
