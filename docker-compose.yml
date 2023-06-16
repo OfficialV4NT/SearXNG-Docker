@@ -5,10 +5,11 @@ services:
     container_name: searxng
     hostname: searxng
     image: searxng/searxng:latest
+    command: sleep infinity
     networks:
       - searxng
     ports:
-     - "127.0.0.1:8071:8080" # change port to whatever you want
+     - "127.0.0.1:8071:8080"
     restart: 'always'
     volumes:
       - ./searxng:/etc/searxng:rw
@@ -21,7 +22,7 @@ services:
       - SETGID
       - SETUID
     environment:
-    - SEARXNG_BASE_URL=https://changethis
+    - SEARXNG_BASE_URL=https://search.whateveritworks.org
     logging:
       driver: "json-file"
       options:
@@ -32,6 +33,7 @@ services:
     container_name: redis
     hostname: redis
     image: redis:latest
+    command: sleep infinity
     user: nobody
     restart: always
     command: redis-server --save "" --appendonly "no"
@@ -48,10 +50,15 @@ services:
       - SETGID
       - SETUID
       - DAC_OVERRIDE
+
   watchtower:
     image: containrrr/watchtower:latest
+    container_name: watchtower
+    hostname: watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    command: searxng, redis
+
 networks:
   searxng:
     ipam:
