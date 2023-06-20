@@ -10,7 +10,7 @@ ui:
   default_theme: simple
   theme_args:
     simple_style: dark
-  infinite_scroll: true
+  infinite_scroll: false
   results_on_new_tab: true
   cache_url: https://archive.ph/
 search:
