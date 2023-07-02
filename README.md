@@ -3,7 +3,7 @@ Create a SearXNG Instance in 5 minutes using docker-compose.
 
 ## Security Audits:
 
-- [Internet.ml](https://internet.nl/site/search.whateveritworks.org/2060148/)
+- [Internet.nl](https://internet.nl/site/search.whateveritworks.org/2060148/)
 - [HSTS Preload](https://hstspreload.org/)
 - [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=search.whateveritworks.org)
 - [Security Headers](https://securityheaders.com/?q=search.whateveritworks.org&hide=on&followRedirects=on)
@@ -12,6 +12,11 @@ Create a SearXNG Instance in 5 minutes using docker-compose.
 - [ImmuniWeb](https://www.immuniweb.com/ssl/search.whateveritworks.org/uLlrAeMb/)
 - [Hardenize](https://www.hardenize.com/report/search.whateveritworks.org/1686343966)
 - [Mozilla.org](https://observatory.mozilla.org/)
+- [report-uri.com](https://report-uri.com/home/tools)
+- [check-your-website.server-daten.de](https://check-your-website.server-daten.de/?q=search.whateveritworks.org)
+- [csp-evaluator.withgoogle.com](https://csp-evaluator.withgoogle.com/)
+- [OpenWPM](https://github.com/openwpm/OpenWPM)
+- [privacyscore.org](https://privacyscore.org/)
 
 ## Usage:
 
