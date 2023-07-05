@@ -1,4 +1,4 @@
-# see https://docs.searxng.org/admin/engines/settings.html#use-default-settings
+# see https://docs.searxng.org/admin/settings/settings.html#use-default-settings
 use_default_settings: true
 server:
   secret_key: "changethis"
