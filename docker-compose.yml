@@ -8,10 +8,15 @@ services:
     networks:
       - searxng
     ports:
-     - "127.0.0.1:8071:8080" # change port to whatever you want
+     - "127.0.0.1:8071:8080"
     restart: 'always'
     volumes:
       - ./searxng:/etc/searxng:rw
+      - type: bind
+        source: ./favicon.png
+        target: /usr/local/searxng/searx/static/themes/simple/img/searxng.png
+        source: ./base.html
+        target: /usr/local/searxng/searx/templates/simple/base.html 
     security_opt:
       - no-new-privileges:true
     cap_drop:
@@ -21,16 +26,16 @@ services:
       - SETGID
       - SETUID
     environment:
-    - SEARXNG_BASE_URL=changethis
+    - SEARXNG_BASE_URL=https://search.whateveritworks.org
     logging:
       driver: "json-file"
       options:
         max-size: "1m"
         max-file: "1"
 
-  redis:
-    container_name: redis
-    hostname: redis
+  searxng-redis:
+    container_name: searxng-redis
+    hostname: searxng-redis
     image: redis:latest
     user: nobody
     restart: always
