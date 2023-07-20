@@ -54,3 +54,4 @@ docker-compose up -d
 ### Advanced
 
 - [Enable Google TCP BBR](https://www.linuxbabe.com/ubuntu/enable-google-tcp-bbr-ubuntu)
+- [Setup Local Resolver: 127.0.0.1](https://www.linuxbabe.com/ubuntu/set-up-local-dns-resolver-ubuntu-20-04-bind9)
