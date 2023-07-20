@@ -13,6 +13,13 @@ ui:
   infinite_scroll: false
   results_on_new_tab: true
   cache_url: https://archive.ph/
+outgoing:
+  request_timeout: 2.0
+  max_request_timeout: 10.0 
+  useragent_suffix: "support@whateveritworks.org"
+  pool_connections: 100
+  pool_maxsize: 10 
+  enable_http2: true
 search:
   autocomplete: "google"
 general:
