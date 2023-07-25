@@ -1,5 +1,7 @@
 # see https://docs.searxng.org/admin/settings/settings.html#use-default-settings
 use_default_settings: true
+formats:
+  - html
 server:
   secret_key: "changethis"
   limiter: true
