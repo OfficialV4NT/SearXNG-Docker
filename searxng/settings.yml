@@ -5,6 +5,7 @@ formats:
 server:
   secret_key: "changethis"
   limiter: true
+  link_token: true
   image_proxy: true
   http_protocol_version: "1.1"
 ui:
@@ -14,7 +15,7 @@ ui:
     simple_style: dark
   infinite_scroll: false
   results_on_new_tab: true
-  cache_url: https://archive.ph/
+  cache_url: https://archive.ph
 outgoing:
   request_timeout: 2.0
   max_request_timeout: 10.0 
