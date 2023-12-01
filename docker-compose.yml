@@ -9,6 +9,8 @@ services:
       - searxng
     ports:
      - "127.0.0.1:8071:8080"
+    depends_on:
+     - searxng-redis
     restart: 'always'
     volumes:
       - ./searxng:/etc/searxng:rw
