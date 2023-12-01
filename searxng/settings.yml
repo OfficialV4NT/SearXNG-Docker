@@ -7,6 +7,7 @@ server:
   limiter: true
   link_token: true
   image_proxy: true
+  public_instance: true
   http_protocol_version: "1.1"
 ui:
   static_use_hash: true
